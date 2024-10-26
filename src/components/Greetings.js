@@ -1,7 +1,12 @@
 import React from "react";
 
-function Greet(){
-    return <h1>Hello it's Kabix. Lets ready for Hack with me!</h1>
+const Greet = props=> {
+    return (
+        <div>
+            <h1>Hello it's Kabix. Lets ready for the Hack ! with {props.name} </h1>
+            {props.children}
+        </div>
+    )
 }
 
 export default Greet;
